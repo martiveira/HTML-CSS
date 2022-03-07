@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Mídias em HTML 5</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simpleste aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="Imagem Flexível">
+
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML 5.</p>
+    <audio src="media/Running Errands - TrackTribe.mp3" controls autoplay></audio>
+
+ <audio preload="metadata" controls loop>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.wav" type="audio/ogg">
+        <source src="media/guanacast-33.ogg" type="audio/wav">
+        <p>Infelizmente seu navegador não reproduz áudio. <a href="media/guanacast-33.mp3">Clique aqui para baixar o arquivo em MP3</a></p>
+    </audio>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+   <video  poster="imagem/thumb-nail-700.png" width="560" height="315" controls loop autoplay>
+       <source src="media/meu-video.m4v" type="video/m4v">
+       <source src="media/meu-video.webm" type="video/webm">
+       <source src="media/meu-video.mp4" type="video/mp4">
+       <p>Infelizmente seu navegador não reproduz video.</p>
+
+    <h2>Incorporando Vídeos do Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IplY8pdVMVg?start=243" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
+</body>
+</html>
